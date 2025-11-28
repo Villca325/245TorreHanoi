@@ -44,8 +44,8 @@ class PaginaDesarrolladores extends StatelessWidget {
                 ),
                 tarjeta(
                   nombre: "Franco Villavicencio", 
-                  rol: "c", 
-                  rutaImagen: ""
+                  rol: "Programador",
+                  rutaImagen: "assets/images/desarrollador5.png"
                 ),
                 tarjeta(
                   nombre: "Randoll Villca", 

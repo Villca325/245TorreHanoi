@@ -54,33 +54,45 @@ class PaginaNiveles extends StatelessWidget {
 
 
   Widget nivelItem(BuildContext context, String titulo, List<Color> colores) {
+
+    final nivelNumero = int.tryParse(titulo.split(' ').last) ?? 1;
+
+    final numeroDiscos = nivelNumero + 2;
+
     return Center(
       child: SizedBox(
         width: 170,
         height: 170,
         child: GestureDetector(
-          onTap: () => Navigator.pushNamed(context, '/gameplay'),
+          onTap: () {
+            Navigator.pushNamed(
+              context,
+              '/gameplay',
+              arguments: numeroDiscos,
+            );
+          },
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
-                colors: colores, 
+                colors: colores,
               ),
-              borderRadius: BorderRadius.circular(20), 
+              borderRadius: BorderRadius.circular(20),
               boxShadow: const [
                 BoxShadow(
                   color: Colors.black26,
-                  blurRadius: 8, 
+                  blurRadius: 8,
                   offset: Offset(2, 4),
                 ),
               ],
             ),
             child: Center(
               child: Text(
-                titulo,
+                "$titulo\n($numeroDiscos Discos)",
+                textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 20, 
+                  fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.black87,
                 ),

@@ -8,10 +8,7 @@ class ConjuntoPilas extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ChangeNotifierProvider(
-      create: (_)=>DatosPila(),
-      child: MiDraggable(),
-    );
+    return const MiDraggable();
   }
 }
 class MiDraggable extends StatefulWidget {
