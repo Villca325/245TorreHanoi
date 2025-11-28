@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:torres_de_hanoi/components/conjunto_pilas.dart';
 import 'base.dart';
 
 class PaginaGameplay extends StatelessWidget {
@@ -22,9 +23,7 @@ class PaginaGameplay extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 10),
-          Center(
-              child: Icon(Icons.account_tree_rounded, size: 150, color: Colors.white),
-            ),
+          ConjuntoPilas(),
         ],
       ),
     );
