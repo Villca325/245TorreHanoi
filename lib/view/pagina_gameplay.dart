@@ -22,11 +22,9 @@ class PaginaGameplay extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 10),
-          Expanded(
-            child: Center(
+          Center(
               child: Icon(Icons.account_tree_rounded, size: 150, color: Colors.white),
             ),
-          ),
         ],
       ),
     );
