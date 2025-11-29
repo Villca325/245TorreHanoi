@@ -65,6 +65,27 @@ class DatosPila extends ChangeNotifier {
                 Navigator.pop(context);
               },
             ),
+            if(pila3.maximo!=6)
+              TextButton(
+              child: const Text("Siguiente Nvl", style: TextStyle(color: Colors.red)),
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  '/gameplay',
+                  arguments: pila3.maximo+1,
+                );
+              },
+            ),
+            if(pila3.maximo==6)
+              TextButton(
+              child: const Text("Niveles", style: TextStyle(color: Colors.red)),
+              onPressed: () {
+                Navigator.pushNamed(
+                context,
+                    '/niveles'
+                );
+              },
+            ),
           ],
         ),
       );

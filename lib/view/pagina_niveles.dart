@@ -63,14 +63,13 @@ class PaginaNiveles extends StatelessWidget {
       child: SizedBox(
         width: 170,
         height: 170,
-        child: GestureDetector(
-          onTap: () {
-            Navigator.pushNamed(
-              context,
-              '/gameplay',
-              arguments: numeroDiscos,
-            );
-          },
+        child: GestureDetector(onTap: () {
+          Navigator.pushNamed(
+            context,
+            '/gameplay',
+            arguments: numeroDiscos,
+          );
+        },
           child: Container(
             decoration: BoxDecoration(
               gradient: LinearGradient(

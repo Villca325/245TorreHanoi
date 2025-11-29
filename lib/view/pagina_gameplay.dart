@@ -39,6 +39,15 @@ class _PaginaGameplayState extends State<PaginaGameplay> {
                   ),
                 ),
                 SizedBox(
+                  child: TextButton.icon(
+                    icon: const Icon(Icons.refresh, color: Colors.red),
+                    label: const Text("Reiniciar", style: TextStyle(color: Colors.red)),
+                    onPressed: () {
+                      datos.reiniciar();
+                    },
+                  )
+                ),
+                SizedBox(
                   width: 160,
                   child: Text(
                     "Tiempo: ${datos.tiempo} s",
