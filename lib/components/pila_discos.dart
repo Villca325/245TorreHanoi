@@ -44,14 +44,18 @@ class _PilaDiscosState extends State<PilaDiscos> {
             },
           ),
         if(pilaMutable.datosPila.isNotEmpty)
-        Draggable(
-          data:{
-            "pila":pilaMutable,
-            "valor":pilaMutable.datosPila.last
-          },
-          feedback: Disco(ancho: pilaMutable.datosPila.last),
-          child: Disco(ancho: pilaMutable.datosPila.last,),              
-        ),
+          Draggable(
+            data:{
+              "pila":pilaMutable,
+              "valor":pilaMutable.datosPila.last
+            },
+            feedback: Material(
+              color: Colors.transparent,
+              child: Disco(ancho: pilaMutable.datosPila.last),
+            ), 
+            childWhenDragging: Disco(ancho: 0),
+            child: Disco(ancho: pilaMutable.datosPila.last,),              
+          ),
         for(int i=pilaMutable.datosPila.length-2;i>=0;i--)
           Disco(ancho: pilaMutable.datosPila[i],),
       ],
