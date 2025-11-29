@@ -69,6 +69,8 @@ class DatosPila extends ChangeNotifier {
               TextButton(
               child: const Text("Siguiente Nvl", style: TextStyle(color: Colors.red)),
               onPressed: () {
+                Navigator.pop(context);
+                Navigator.pop(context);
                 Navigator.pushNamed(
                   context,
                   '/gameplay',
@@ -80,6 +82,8 @@ class DatosPila extends ChangeNotifier {
               TextButton(
               child: const Text("Niveles", style: TextStyle(color: Colors.red)),
               onPressed: () {
+                Navigator.pop(context);
+                Navigator.pop(context);
                 Navigator.pushNamed(
                 context,
                     '/niveles'
