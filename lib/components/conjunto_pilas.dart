@@ -84,10 +84,10 @@ class _MiDraggableState extends State<MiDraggable> {
       children: [
         //El Tubo
         Container(
-          width: 16, 
+          width: 20, 
           height: altura - 5,
           decoration: BoxDecoration(
-            color: Colors.white.withAlpha(38),
+            color: Colors.lightBlue.withAlpha(200),
             borderRadius: const BorderRadius.vertical(top: Radius.circular(10)),
             border: Border.all(color: Colors.white.withAlpha(51), width: 1),
           ),

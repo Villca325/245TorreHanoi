@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:provider/provider.dart'; // ✅ Importar Provider
-import 'package:torres_de_hanoi/controller/estado_pilas.dart'; // ✅ Importar DatosPila
+import 'package:provider/provider.dart';
+import 'package:torres_de_hanoi/controller/estado_pilas.dart';
 import 'view/pagina_desarrolladores.dart';
 import 'view/pagina_menu.dart';
 import 'view/pagina_niveles.dart';
-import 'view/pagina_gameplay.dart' hide DatosPila;
+import 'view/pagina_gameplay.dart';
 import 'view/pagina_reglas.dart';
 
 void main() async{
