@@ -57,7 +57,7 @@ class PaginaNiveles extends StatelessWidget {
 
     final nivelNumero = int.tryParse(titulo.split(' ').last) ?? 1;
 
-    final numeroDiscos = nivelNumero + 2;
+    final numeroDiscos = nivelNumero + 1;
 
     return Center(
       child: SizedBox(

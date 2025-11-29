@@ -147,9 +147,9 @@ class PaginaReglas extends StatelessWidget {
               Text(
                 descripcion,
                 style: const TextStyle(
-                  color: Colors.white70, // Un blanco un poco más apagado para leer mejor
+                  color: Colors.white70,
                   fontSize: 14,
-                  height: 1.4, // Mayor espacio entre líneas
+                  height: 1.4,
                 ),
               ),
             ],

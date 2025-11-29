@@ -34,13 +34,14 @@ class _PilaDiscosState extends State<PilaDiscos> {
             final provider=context.read<DatosPila>();
             return provider.puedeAceptar(pilaMutable, valor);
           },
-          onAcceptWithDetails:(data){
-            final pilaOrigen=data.data["pila"] as PilaCompleta;
-            final valor=data.data["valor"];
-            context.read<DatosPila>().moverDisco(
-              pilaOrigen,pilaMutable,valor
-            );
-          } ,
+            onAcceptWithDetails: (data) {
+              final pilaOrigen = data.data["pila"] as PilaCompleta;
+              final valor = data.data["valor"];
+              final provider = context.read<DatosPila>();
+
+              provider.moverDisco(pilaOrigen, pilaMutable, valor);
+              provider.comprobarGanado(context);
+            },
           ),
         if(pilaMutable.datosPila.isNotEmpty)
         Draggable(
