@@ -15,8 +15,8 @@ class Disco extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: ancho!=0?50+(ancho)*30:200,
-      height: 75,
+      width: ancho!=0?50+(ancho)*15:200,
+      height: 35,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           begin: Alignment.bottomCenter,
