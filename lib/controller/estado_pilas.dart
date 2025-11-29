@@ -82,9 +82,9 @@ class DatosPila extends ChangeNotifier {
           (i) => (discos - i) + 5,
     );
 
-    pila1 = PilaCompleta(discosInicialesList, discos);
-    pila2 = PilaCompleta([], discos);
-    pila3 = PilaCompleta([], discos);
+    pila1.datosPila = discosInicialesList;
+    pila2.datosPila = [];
+    pila3.datosPila =[];
 
     notifyListeners();
   }
