@@ -32,19 +32,14 @@ class MyApp extends StatelessWidget {
         '/': (_) => const PaginaMenu(),
         '/niveles': (_) => const PaginaNiveles(),
 
-        // ✅ RUTA CORREGIDA: Manejo de Argumentos y Provider
         '/gameplay': (context) {
-          // 1. Obtener el argumento (número de discos)
-          // Si no se envía argumento, se usa un valor por defecto seguro (ej: 3).
           final numeroDiscos = ModalRoute.of(context)?.settings.arguments as int? ?? 3;
 
-          // 2. Envolver PaginaGameplay en el Provider y pasar el argumento.
           return ChangeNotifierProvider(
             create: (context) => DatosPila(discosIniciales: numeroDiscos),
             child: const PaginaGameplay(),
           );
         },
-        // FIN RUTA CORREGIDA
 
         '/desarrolladores': (_) => const PaginaDesarrolladores(),
         '/reglas': (_) => const PaginaReglas(),

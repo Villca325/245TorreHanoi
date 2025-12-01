@@ -18,13 +18,11 @@ Widget paginaBase({
         ),
       ),
       child: SafeArea(
-        // CAMBIO CLAVE: Usamos Stack para que el botón sea independiente
         child: Stack(
           children: [
             // CAPA 1: Estructura Vertical (Barra de título + Contenido)
             Column(
               children: [
-                // La barra de fondo SOLO se dibuja si hay un título explícito
                 if (titulo != null)
                   Container(
                     width: double.infinity,

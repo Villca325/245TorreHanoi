@@ -87,10 +87,10 @@ class PaginaMenu extends StatelessWidget {
             ],
           ),
         const Padding(
-          padding: EdgeInsets.only(bottom: 10.0), // Un poco de margen abajo
+          padding: EdgeInsets.only(bottom: 10.0),
           child: Text(
             "Todos los derechos reservados ManadaCORP 2025",
-            textAlign: TextAlign.center, // Fuerza el centro del texto
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.grey, fontSize: 12),
           ),
         ),

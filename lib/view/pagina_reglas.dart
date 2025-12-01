@@ -22,7 +22,7 @@ class PaginaReglas extends StatelessWidget {
 
             Image.asset(
                   'assets/images/reglas.png',
-                  width: 200, // Un poco más pequeña para dar espacio al texto
+                  width: 200,
                   fit: BoxFit.cover,
                 ),
 
@@ -50,19 +50,18 @@ class PaginaReglas extends StatelessWidget {
 
             // --- CAJA DE REGLAS ---
             Container(
-              width: double.infinity, // Ocupa el ancho disponible (máximo 700 por seguridad)
+              width: double.infinity,
               constraints: const BoxConstraints(maxWidth: 700),
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-                // Fondo oscuro semitransparente para que el texto resalte
+
                 color: Colors.black26, 
                 borderRadius: BorderRadius.circular(20),
                 border: Border.all(color: Colors.white10), // Borde sutil
               ),
               child: Column(
                 children: [
-                  // Aquí llamamos a la función auxiliar que creé abajo
-                  _itemRegla(Icons.emoji_objects, "Objetivo", 
+                  _itemRegla(Icons.emoji_objects, "Objetivo",
                     "Mueve todos los discos desde la torre inicial hasta la torre final."),
                   
                   _divider(),
@@ -113,7 +112,6 @@ class PaginaReglas extends StatelessWidget {
   }
 
   // --- WIDGET AUXILIAR PARA CADA REGLA ---
-  // Esto hace que el código de arriba quede muy limpio
   Widget _itemRegla(IconData icono, String titulo, String descripcion) {
     return Row(
       crossAxisAlignment: CrossAxisAlignment.start,

@@ -115,7 +115,7 @@ class PaginaDesarrolladores extends StatelessWidget {
 
           Text(
             "Todos los derechos reservados ManadaCORP 2025",
-            textAlign: TextAlign.center, // Fuerza el centro del texto
+            textAlign: TextAlign.center,
             style: TextStyle(color: Colors.grey, fontSize: 12),
           ),
         ],
