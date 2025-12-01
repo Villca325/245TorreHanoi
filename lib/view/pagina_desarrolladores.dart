@@ -23,7 +23,7 @@ class PaginaDesarrolladores extends StatelessWidget {
               children: [
                 SizedBox(width: 50),
                 tarjeta(
-                  nombre: "Elizeo Condori", 
+                  nombre: "Eliseo Condori",
                   rol: "Programador", 
                   rutaImagen: ""
                 ),
