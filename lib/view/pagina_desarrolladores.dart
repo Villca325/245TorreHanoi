@@ -13,7 +13,6 @@ class PaginaDesarrolladores extends StatelessWidget {
         onPressed: () => Navigator.pop(context),
       ),
       contenido: Column(
-        
         children: [
           SizedBox(height: 30),
           SingleChildScrollView(
@@ -23,14 +22,14 @@ class PaginaDesarrolladores extends StatelessWidget {
               children: [
                 SizedBox(width: 50),
                 tarjeta(
-                  nombre: "Eliseo Condori",
+                  nombre: "Eliseo Condori", 
                   rol: "Programador", 
                   rutaImagen: ""
                 ),
                 tarjeta(
                   nombre: "Joel Flores", 
                   rol: "UI designer", 
-                  rutaImagen: "assets/images/desarrollador2.png"
+                  rutaImagen: ""
                 ),
                 tarjeta(
                   nombre: "Hernan Laruta", 
@@ -45,10 +44,10 @@ class PaginaDesarrolladores extends StatelessWidget {
                 tarjeta(
                   nombre: "Franco Villavicencio", 
                   rol: "Programador",
-                  rutaImagen: "assets/images/desarrollador5.png"
+                  rutaImagen: ""
                 ),
                 tarjeta(
-                  nombre: "Randoll Villca", 
+                  nombre: "Randol Villca", 
                   rol: "d", 
                   rutaImagen: ""
                 ),
