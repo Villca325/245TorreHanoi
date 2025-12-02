@@ -25,7 +25,7 @@ class _MiDraggableState extends State<MiDraggable> {
     final datos = context.watch<DatosPila>();
     
     final size = MediaQuery.of(context).size;
-    final alturaZonaJuego = size.height * 0.55;
+    final alturaZonaJuego = size.height * 0.65;
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.end,
